@@ -1,11 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from '@astrojs/image/components';
 ---
 
 <Layout title="Oplan - Planos de Saúde">
 	<header class="flex justify-between items-center w-screen h-[95px] p-7 bg-white shadow-lg">
-		<img src="./public/logo.svg" alt="">
-		<img class="cursor-pointer h-[30px]" src="./public/icon-menu.svg" alt="">
+		<Image src="/public/images/logo.svg" alt="Logo Oplan" width={128} height={36} />
+		<Image class="cursor-pointer" src="/public/images/icon-menu.svg" width={35} height={35} alt="Menu" />
 	</header>
 	<section class="bg-gray-500 min-h-[calc(100vh-100px-70px)]">
 		<h1 class="text-center text-4xl font-bold w-[90%]">Plano de Saúde: <br>Encontre o Plano Ideal para Sua Empresa</h1>
