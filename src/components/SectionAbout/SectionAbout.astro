@@ -1,25 +1,11 @@
-
 <section  class="m-auto h-[200vh]">
     <div id="servicesMenu" class="bg-gray-300">
         <div class="container h-[100px] flex items-center  m-auto">
-            <h1 class="font-bold text-xl">O que deseja saber?</h1>
+            <h1 id="h1" class="font-bold text-xl">O que deseja saber?</h1>
         </div>
     </div>
 </section>
 
-
 <script>
-
-    window.addEventListener("scroll", function(){
-        if (window.scrollY > 850) {
-        const servicesMenu = document.querySelector('#servicesMenu')
-        servicesMenu.style.position = 'fixed';
-        servicesMenu.style.top = '0';
-        servicesMenu.style.width = '100%';
-
-
-        } else {
-            servicesMenu.style.position = 'static'
-        }
-    })
+import '../../js/TopMenuServices'
 </script>
