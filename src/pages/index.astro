@@ -1,22 +1,47 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Image } from '@astrojs/image/components';
+import Layout from "../layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
 ---
 
 <Layout title="Oplan - Planos de Saúde">
-	<header class="flex justify-between items-center w-screen h-[95px] p-7 bg-white shadow-lg">
-		<img src="https://res.cloudinary.com/dbjzaupe7/image/upload/v1675645218/logo_yvwace.svg" alt="Logo Oplan" width={128} height={36} />
-		<img class="cursor-pointer" src="https://res.cloudinary.com/dbjzaupe7/image/upload/v1675645218/icon-menu_laqjft.svg" width={34} height={34} alt="Menu" />
-	</header>
-	<section class="text-center bg-gray-500 min-h-[calc(100vh-100px-10vh-45px)] flex justify-center items-center text-white gradient-hero flex-col">
-		<h1 class="text-4xl font-bold w-[90%]">Plano de Saúde: <br>Encontre o Plano Ideal para Sua Empresa</h1>
-		<p class="w-[75%] mt-5 brand-text-gray-color">Compre Online com Rapidez e Segurança - Planos de Saúde para todos os Orçamentos"</p>
-		<span class="mt-10">Cotação rápida e 100% Online.</span>
-		<button class="bg-blue-500 px-6 py-4 rounded-lg mt-4">Simule agora</button>
-	</section>
-	<section class="flex items-center justify-between h-[calc(10vh)] px-14 brand-gray-800 brand-text-gray-color">
-		<p><</p>
-		<p>Texto</p>
-		<p>></p>
-	</section>
+  <header
+    class="flex justify-between items-center w-screen h-[95px] p-7 bg-white shadow-lg"
+  >
+    <a href="./"
+      ><img
+        src="https://res.cloudinary.com/dbjzaupe7/image/upload/v1675645218/logo_yvwace.svg"
+        alt="Logo Oplan"
+        width={128}
+        height={36}
+      /></a
+    >
+    <img
+      class="cursor-pointer"
+      src="https://res.cloudinary.com/dbjzaupe7/image/upload/v1675645218/icon-menu_laqjft.svg"
+      width={34}
+      height={34}
+      alt="Menu"
+    />
+  </header>
+  <section
+    class="text-center bg-gray-500 min-h-[calc(100vh-100px-10vh-50px)] xl:h-[calc(100vh-100px-10vh)] flex justify-center items-center text-white gradient-hero flex-col"
+  >
+    <h1 class="text-4xl font-bold w-[90%]">
+      <span class="text-gradient">Plano de Saúde:</span><br />Encontre o Plano
+      Ideal para Sua Empresa
+    </h1>
+    <p class="w-[75%] mt-5 brand-text-gray-color">
+      Compre Online com Rapidez e Segurança - Planos de Saúde para todos os
+      Orçamentos"
+    </p>
+    <span class="mt-10">Cotação rápida e 100% Online.</span>
+    <button class="bg-blue-500 px-12 py-4 rounded-lg mt-4">Simule agora</button>
+  </section>
+  <section
+    class="flex items-center justify-between h-[calc(10vh)] px-14 brand-gray-800 brand-text-gray-color"
+  >
+    <p><</p>
+    <p>Segunda via Boleto</p>
+    <p>></p>
+  </section>
 </Layout>
