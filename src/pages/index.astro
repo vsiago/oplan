@@ -46,7 +46,7 @@ import { Image } from "@astrojs/image/components";
   </div>
   </header>
   <section
-    class="text-center bg-gray-500 min-h-[calc(100vh-100px-10vh-50px)] xl:h-[calc(100vh-100px-10vh)] flex justify-center items-center text-white gradient-hero flex-col"
+    class="text-center bg-gray-500 min-h-[calc(100vh-100px-10vh-50px)] lg:h-[calc(100vh-100px-10vh)] flex justify-center items-center text-white gradient-hero flex-col"
   >
     <h1 class="text-4xl font-bold w-[90%] lg:text-6xl lg:w-[80%]">
       <span class="text-gradient">Plano de Saúde:</span><br />Encontre o Plano
@@ -59,11 +59,11 @@ import { Image } from "@astrojs/image/components";
     <span class="mt-10">Cotação rápida e 100% Online.</span>
     <button class="bg-blue-500 px-12 py-4 rounded-lg mt-4">Simule agora</button>
   </section>
-  <section
-    class="flex items-center justify-between h-[calc(10vh)] px-14 brand-gray-800 brand-text-gray-color"
-  >
-    <p><</p>
-    <p>Segunda via Boleto</p>
-    <p>></p>
+  <section class=" brand-gray-800 brand-text-gray-color">
+    <div class="flex container items-center justify-between h-[calc(10vh+5px)] px-14 m-auto">
+      <p><</p>
+      <p>Segunda via Boleto</p>
+      <p>></p>
+    </div>
   </section>
 </Layout>
