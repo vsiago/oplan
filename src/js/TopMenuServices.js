@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function(){
-    if (window.scrollY > window.screen.availHeight - 100) {
+    if (window.scrollY > window.screen.availHeight - 100 + 450) {
     const servicesMenu = document.querySelector('#servicesMenu')
     servicesMenu.style.position = 'fixed';
     servicesMenu.style.top = '0';
