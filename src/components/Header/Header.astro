@@ -1,9 +1,9 @@
 ---
-import ButtonDocs from "../ButtonDocs/ButtonDocs.astro";
+import ListaMenu from "./ListaMenu/ListaMenu.astro";
 ---
 
 <header class="bg-white shadow-lg">
-    <div class="flex m-auto container justify-between items-center w-screen h-[95px] p-7 ">
+  <div class="flex m-auto container justify-between items-center w-screen h-[95px] p-7 ">
       <a href="./"
       ><img
         src="https://res.cloudinary.com/dbjzaupe7/image/upload/v1675645218/logo_yvwace.svg"
@@ -13,24 +13,9 @@ import ButtonDocs from "../ButtonDocs/ButtonDocs.astro";
       /></a
     >
     <nav>
-      <ul class="hidden lg:flex items-center gap-6 brand-text-menu-gray-color">
-        <li>
-          <a href="./">Inicio</a>
-        </li>
-        <li>
-          <a href="./">Sobre</a>
-        </li>
-        <li>
-          <a href="./">Blog</a>
-        </li>
-        <li>
-          <a href="./">Contato</a>
-        </li>
-        <ButtonDocs />
-      </ul>
+      <ListaMenu />
       <div>
-  
-        <img
+        <img id="menuIcon"
         class="cursor-pointer lg:hidden"
         src="https://res.cloudinary.com/dbjzaupe7/image/upload/v1675645218/icon-menu_laqjft.svg"
         width={34}
@@ -39,5 +24,9 @@ import ButtonDocs from "../ButtonDocs/ButtonDocs.astro";
       />
       </div>
     </nav>
-    </div>
-    </header>
+  </div>
+</header>
+
+<script>
+  import './ListaMenu'
+</script>
