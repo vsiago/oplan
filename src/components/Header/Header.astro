@@ -3,30 +3,33 @@ import ListaMenu from "./ListaMenu/ListaMenu.astro";
 ---
 
 <header class="bg-white shadow-lg">
-  <div class="flex m-auto container justify-between items-center w-screen h-[95px] p-7 ">
-      <a href="./"
+  <div
+    class="flex m-auto container justify-between items-center w-screen h-[105px] p-7"
+  >
+    <a href="./"
       ><img
         src="https://res.cloudinary.com/dbjzaupe7/image/upload/v1675645218/logo_yvwace.svg"
         alt="Logo Oplan"
-        width={128}
+        width={205}
         height={36}
       /></a
     >
     <nav>
       <ListaMenu />
       <div>
-        <img id="menuIcon"
-        class="cursor-pointer lg:hidden"
-        src="https://res.cloudinary.com/dbjzaupe7/image/upload/v1675645218/icon-menu_laqjft.svg"
-        width={34}
-        height={34}
-        alt="Menu"
-      />
+        <img
+          id="menuIcon"
+          class="cursor-pointer lg:hidden"
+          src="https://res.cloudinary.com/dbjzaupe7/image/upload/v1675645218/icon-menu_laqjft.svg"
+          width={34}
+          height={34}
+          alt="Menu"
+        />
       </div>
     </nav>
   </div>
 </header>
 
 <script>
-  import './ListaMenu'
+  import "./ListaMenu";
 </script>
