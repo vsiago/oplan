@@ -1,15 +1,18 @@
 // Animar Menu Hover
 const btnDocs = document.querySelector('#btnDocs');
 const listaMenuHover = document.querySelector('#listaMenuHover');
+const arrowBtn = document.querySelector('#arrowBtn');
 
 
 btnDocs.addEventListener("mouseover", function() {
     listaMenuHover.style.display = "block";
+    listaMenuHover.classList.add('w-[90%]')
 })
 
 listaMenuHover.addEventListener("mouseout", function () {
     listaMenuHover.style.display = "none";
 });
+
 
 
 // SubMenu Regulamentações ANS
