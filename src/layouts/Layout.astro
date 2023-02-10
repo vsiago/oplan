@@ -70,10 +70,6 @@ const { title } = Astro.props;
 		animation: animar-menu-principal 150ms ease-out;
 	}
 
-	.animar-sub {
-		animation: animar-sub 200ms ease-in;
-	}
-
 @keyframes spin {
   from {
     height: 0;
@@ -87,6 +83,7 @@ const { title } = Astro.props;
   }
 }
 
+
 @keyframes animar-menu-principal {
   from {
     height: 0;
@@ -98,16 +95,6 @@ const { title } = Astro.props;
   }
 }
 
-@keyframes animar-sub {
-	from {
-    height: 0;
-	opacity: .0;
-  }
-  to {
-    height: auto;
-	opacity: 1;
-  }
-}
 
 }
 </style>

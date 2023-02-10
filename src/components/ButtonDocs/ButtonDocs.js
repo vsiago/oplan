@@ -1,22 +1,31 @@
+// Animar Menu Hover
 const btnDocs = document.querySelector('#btnDocs');
-const listaMenu = document.querySelector('#listaMenu');
+const listaMenuHover = document.querySelector('#listaMenuHover');
 
 
 btnDocs.addEventListener("mouseover", function() {
-    listaMenu.style.display = "block";
+    listaMenuHover.style.display = "block";
 })
 
-listaMenu.addEventListener("mouseout", function () {
-    listaMenu.style.display = "none";
+listaMenuHover.addEventListener("mouseout", function () {
+    listaMenuHover.style.display = "none";
 });
 
 
-const subMenu = document.querySelectorAll('.animar-sub-menu')
-const listaSubMenu = document.querySelector('#listaSubMenu')
+// SubMenu Regulamentações ANS
 
-subMenu.forEach((e) => {
-    e.addEventListener("click", function () {
-        listaSubMenu.classList.toggle('hidden');
-    })
+const btnRegAns = document.querySelector('.btnRegAns')
+const regAns = document.querySelector('#regAns')
+
+btnRegAns.addEventListener("click", function () {
+    regAns.classList.toggle('hidden');
 })
 
+// SubMenu Qualificações de Operadoras qualiOpe
+
+const btnQualiOpe = document.querySelector('.btnQualiOpe')
+const qualiOpe = document.querySelector('#qualiOpe')
+
+btnQualiOpe.addEventListener("click", function () {
+    qualiOpe.classList.toggle('hidden');
+})
