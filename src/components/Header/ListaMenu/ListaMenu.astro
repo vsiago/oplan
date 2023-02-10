@@ -2,39 +2,48 @@
 import ButtonDocs from "../../ButtonDocs/ButtonDocs.astro";
 ---
 
-
-<ul id="menuLista" class="animar-menu-principal hidden lg:flex items-center gap-6 brand-text-menu-gray-color">
-        <li>
-          <a href="./">Inicio</a>
-        </li>
-        <li>
-          <a href="./">Sobre</a>
-        </li>
-        <li>
-          <a href="./">Blog</a>
-        </li>
-        <li>
-          <a href="./">Contato</a>
-        </li>
-        <ButtonDocs />
+<ul
+  id="menuLista"
+  class="animar-menu-principal hidden lg:flex items-center gap-6 brand-text-menu-gray-color"
+>
+  <li
+    class="p-5 text-3xl active:bg-blue-500 active:text-white active:rounded-xl w-full text-center lg:p-0 lg:text-xl"
+  >
+    <a href="./">Inicio</a>
+  </li>
+  <li
+    class="p-5 text-3xl active:bg-blue-500 active:text-white active:rounded-xl w-full text-center lg:p-0 lg:text-xl"
+  >
+    <a href="./">Sobre</a>
+  </li>
+  <li
+    class="p-5 text-3xl active:bg-blue-500 active:text-white active:rounded-xl w-full text-center lg:p-0 lg:text-xl"
+  >
+    <a href="./">Blog</a>
+  </li>
+  <li
+    class="p-5 text-3xl active:bg-blue-500 active:text-white active:rounded-xl w-full text-center lg:p-0 lg:text-xl"
+  >
+    <a href="./">Contato</a>
+  </li>
+  <ButtonDocs />
 </ul>
 
-
 <style>
-    .mobile-collapse {
-        display: flex;
-        position: fixed;
-        z-index: 10;
-        left: 0;
-        top: 95px;
-        height: 100vh;
-        width: 100vw;
-        background-color: #363E52;
-        flex-direction: column;
-        padding: 20px;
-    }
+  .mobile-collapse {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 95px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #363e52;
+    flex-direction: column;
+    padding: 20px;
+  }
 </style>
 
 <script>
-    import '../ListaMenu'
+  import "../ListaMenu";
 </script>
