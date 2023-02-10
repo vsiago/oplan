@@ -11,10 +11,12 @@ listaMenu.addEventListener("mouseout", function () {
 });
 
 
-const subMenu = document.querySelector('#animar-sub-menu')
+const subMenu = document.querySelectorAll('.animar-sub-menu')
 const listaSubMenu = document.querySelector('#listaSubMenu')
 
-
-subMenu.addEventListener("click", function () {
-    listaSubMenu.classList.toggle('hidden');
+subMenu.forEach((e) => {
+    e.addEventListener("click", function () {
+        listaSubMenu.classList.toggle('hidden');
+    })
 })
+
