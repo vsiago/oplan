@@ -9,10 +9,11 @@ btnDocs.addEventListener("mouseover", function() {
     listaMenuHover.classList.add('w-[90%]')
 })
 
+
+
 listaMenuHover.addEventListener("mouseout", function () {
     listaMenuHover.style.display = "none";
 });
-
 
 
 // SubMenu Regulamentações ANS
