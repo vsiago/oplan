@@ -12,9 +12,10 @@ listaMenuHover.addEventListener("mouseout", function () {
   listaMenuHover.style.display = "none";
 });
 
-btnDocs.addEventListener("click", function () {
-  listaMenuHover.classList.toggle("hidden");
-});
+// btnDocs.addEventListener("click", function () {
+//   listaMenuHover.style.display = "none";
+//   console.log("clicou");
+// });
 
 // SubMenu Regulamentações ANS
 
