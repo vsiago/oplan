@@ -78,7 +78,7 @@
             <br />
             <div class="mt-4 flex items-center">
               <input class="pointer-events-auto w-5 h-5" type="checkbox" required />
-              <span class="ml-2 "
+              <span class="ml-2 text-left"
                 >Aceito que alguém entre em contato</span
               >
             </div>
@@ -144,11 +144,11 @@
   }
 
   input:checked ~ label .modal {
-    width: 90vw;
-    height: 90vh;
+    width: 100vw;
+    height: 102vh;
     background: #404d67;
     pointer-events: none;
-    border-radius: 20px;
+    border-radius: 0;
     opacity: 1;
     box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.3);
   }
@@ -156,5 +156,8 @@
   input:checked ~ label .fechar {
     opacity: 1;
     pointer-events: auto;
+    position: absolute;
+    right: 30px;
+    top: 30px;
   }
 </style>
