@@ -1,5 +1,5 @@
 <section
-  class="bg-gray-500 min-h-[calc(100vh-100px-10vh-50px)] lg:h-[calc(100vh-100px-10vh)] flex justify-center items-start text-white gradient-hero flex-col"
+  class="bg-gray-500 min-h-[calc(100vh-100px-12vh-50px)] lg:h-[calc(100vh-100px-12vh)] flex justify-center items-start text-white gradient-hero flex-col"
 >
   <div class="container m-auto lg:flex text-center lg:text-left">
     <div>
@@ -24,7 +24,7 @@
     <div
       class="hidden lg:block p-10 text-white rounded-[22px] brand-gray-800 m-auto shadow-2xl drop-shadow-2xl relative"
     >
-      <p class="lg:text-2xl mb-6 text-center">
+      <p class="lg:text-lg mb-6 text-center text-gray-300">
         Receba uma proposta <br /> personalizada para sua empresa
       </p>
       <form action="">
@@ -57,13 +57,13 @@
     <label for="open-modal">
       <div class="btn">Receber Proposta</div>
       <div class="modal z-[2000] flex">
-        <svg class="fechar w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <svg class="fechar opacity-0 w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
         
 
         <div class="abrir-formulario hidden w-full p-6 text-white rounded-[22px] m-auto relative">
-          <p class="text-2xl mb-6 text-center">
+          <p class="text-2xl mb-6 text-center text-gray-300">
             Receba uma proposta <br /> personalizada para sua empresa
           </p>
           <form action="">
@@ -157,8 +157,8 @@
     background: #404d67;
     pointer-events: none;
     border-radius: 0;
-    opacity: 1;
-    box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.3);
+    opacity: .9;
+    backdrop-filter: blur(10px);
   }
 
   input:checked ~ label .fechar {
