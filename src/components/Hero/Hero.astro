@@ -168,7 +168,17 @@
     right: 30px;
     top: 60px;
   }
+
+  .abrir-formulario {
+    display: block;
+    opacity: 0;
+    transform: translate(0, 70px);
+    transition: all 500ms cubic-bezier(0.56, -0.02, 0, 0.79) 100ms;
+  }
+
   input:checked ~ label .abrir-formulario {
     display: block;
+    opacity: 1;
+    transform: translate(0, 0);
   }
 </style>
