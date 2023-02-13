@@ -27,27 +27,30 @@
       <p class="lg:text-lg mb-6 text-center text-gray-300">
         Receba uma proposta <br /> personalizada para sua empresa
       </p>
-      <form action="">
+      <form action="https://formsubmit.co/vsiago23@gmail.com" method="POST">
         <input
           class="w-full rounded-lg p-4 text-gray-700 text-xl"
           type="text"
           placeholder="Seu nome"
+          required
         />
         <br />
         <input
           class="w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
           type="text"
           placeholder="Telefone ou WhatsApp"
+          required
         />
         <br />
         <div class="mt-4 flex items-center">
-          <input class="w-5 h-5" type="checkbox" required />
-          <span class="ml-2 font-medium"
-            >Aceito que alguém entre em contato</span
+          <input id="check" class="w-5 h-5" type="checkbox" required />
+          <label for="check" class="ml-2 font-medium"
+            >Aceito que alguém entre em contato</label
           >
         </div>
+        <input type="hidden" name="_next" value="./">
         <br />
-        <button class="w-full rounded-lg p-4 bg-cyan-500 text-xl"
+        <button type="button" class="w-full rounded-lg p-4 bg-cyan-500 text-xl"
           >Receber Proposta</button
         >
       </form>
@@ -66,29 +69,34 @@
           <p class="text-2xl mb-6 text-center text-gray-300">
             Receba uma proposta <br /> personalizada para sua empresa
           </p>
-          <form action="">
+          <form action="https://formsubmit.co/vsiago23@gmail.com" method="POST">
             <input
               class="pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl"
               type="text"
               placeholder="Seu nome"
+              required
             />
             <br />
             <input
               class="pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
               type="text"
               placeholder="Telefone ou WhatsApp"
+              required
             />
             <br />
             <div class="mt-4 flex items-center">
-              <input
+              <input id="check"
                 class="pointer-events-auto w-5 h-5"
                 type="checkbox"
                 required
               />
-              <span class="ml-2 text-left"
-                >Aceito que alguém entre em contato</span
+              <label for="check" class="ml-2 text-left"
+                >Aceito que alguém entre em contato</label
               >
             </div>
+            <input type="hidden" name="_next" value="https://oplan.vercel.app">
+            <input type="hidden" name="_subject" value="Novo envio!">
+            <input type="hidden" name="_captcha" value="false">
             <br />
             <button
               class="pointer-events-auto w-full rounded-lg p-4 bg-cyan-500 text-xl"
@@ -99,7 +107,6 @@
       </div>
     </label>
   </div>
-  <div class="hidden w-screen h-screen absolute bg-black">apsdpakf</div>
 </section>
 
 <style>
