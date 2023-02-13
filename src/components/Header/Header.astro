@@ -33,7 +33,7 @@ import ListaMenu from "./ListaMenu/ListaMenu.astro";
         </label>
         <ul
           id="menuLista"
-          class="animar-menu-principal transition-[.25s-ease-in-out] opacity-0 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center justify-center lg:flex lg:static lg:flex-row gap-6 brand-text-menu-gray-color lg:top-0 lg:left-0 lg:translate-x-0 lg:translate-y-0 lg:opacity-100"
+          class="animar-menu-principal hidden transition-[.25s-ease-in-out] opacity-0 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex-col items-center justify-center lg:flex lg:static lg:flex-row gap-6 brand-text-menu-gray-color lg:top-0 lg:left-0 lg:translate-x-0 lg:translate-y-0 lg:opacity-100"
         >
           <li
             class="p-3 text-xl active:bg-blue-500 active:text-white lg:active:bg-white lg:active:text-gray-800 active:rounded-xl w-full text-center lg:p-0 lg:text-xl"
@@ -72,6 +72,7 @@ import ListaMenu from "./ListaMenu/ListaMenu.astro";
     box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
     transition: box-shadow 1s cubic-bezier(0.1, 1.1, 0.42, 0.99);
     border-radius: 50%;
+    z-index: 1000;
   }
 
   .menu:hover {
@@ -112,6 +113,7 @@ import ListaMenu from "./ListaMenu/ListaMenu.astro";
   }
 
   input:checked ~ ul {
+    display: block;
     opacity: 1;
   }
 

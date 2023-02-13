@@ -6,7 +6,7 @@
       <p class="text-xl mb-5 lg:text-2xl brand-text-gray-color font-medium">
         Seja Bem vindo a Oplan
       </p>
-      <h1 class="text-6xl font-bold lg:text-7xl">
+      <h1 class="text-6xl font-bold lg:text-7xl transition-all">
         A sua melhor <br />
         escolha em <br />
         <span class="text-gradient">Planos de Saúde</span>
@@ -16,13 +16,13 @@
       >
         Produtos personalizados, <br />feitos sob medida para a sua empresa.
       </p>
-      <button
+      <!-- <button
         class="md:w-[80%] rounded-lg p-4 bg-cyan-500 text-xl mt-6 lg:hidden"
         >Receber uma proposta</button
-      >
+      > -->
     </div>
     <div
-      class="hidden lg:block p-10 text-white rounded-[22px] brand-gray-800 m-auto shadow-2xl"
+      class="hidden lg:block p-10 text-white rounded-[22px] brand-gray-800 m-auto shadow-2xl drop-shadow-2xl relative"
     >
       <p class="lg:text-2xl mb-6 text-center">
         Receba uma proposta <br /> personalizada para sua empresa
@@ -52,16 +52,46 @@
         >
       </form>
     </div>
-    <input id="open-modal" type="checkbox" />
+    <input class="inputCheck" id="open-modal" type="checkbox" />
 
     <label for="open-modal">
-      <div class="btn">abrir modal</div>
+      <div class="btn">Receber Proposta</div>
       <div class="modal">
-        <p>Conteudo</p>
         <div class="fechar">X</div>
+
+        <div class="lg:block p-10 text-white rounded-[22px] m-auto relative">
+          <p class="text-2xl mb-6 text-center">
+            Receba uma proposta <br /> personalizada para sua empresa
+          </p>
+          <form action="">
+            <input
+              class="w-full rounded-lg p-4 text-gray-700 text-xl"
+              type="text"
+              placeholder="Seu nome"
+            />
+            <br />
+            <input
+              class="w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
+              type="text"
+              placeholder="Telefone ou WhatsApp"
+            />
+            <br />
+            <div class="mt-4 flex items-center">
+              <input class="w-5 h-5" type="checkbox" required />
+              <span class="ml-2 font-medium"
+                >Aceito que alguém entre em contato</span
+              >
+            </div>
+            <br />
+            <button class="w-full rounded-lg p-4 bg-cyan-500 text-xl"
+              >Receber Proposta</button
+            >
+          </form>
+        </div>
       </div>
     </label>
   </div>
+  <div class="hidden w-screen h-screen absolute bg-black">apsdpakf</div>
 </section>
 
 <style>
@@ -69,29 +99,37 @@
     background: #ccc;
   }
 
-  input {
+  .inputCheck {
     display: none;
   }
   .btn {
-    background: #333;
+    background: #06b6d4;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 4px;
     color: white;
-    width: 200px;
-    height: 50px;
+    width: 60%;
+    height: 55px;
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 0 0px #333;
+    box-shadow: 0 0 0 0px #06b6d4;
     transition: all 1s ease-in-out;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 50px;
+  }
+
+  @media (min-width: 1024px) {
+    .btn {
+      display: none;
+    }
   }
 
   .btn:hover {
-    box-shadow: 0 0 0 8px #333, 0 0 0 8px #333;
+    box-shadow: 0 0 0 8px #06b6d4, 0 0 0 8px #06b6d4;
   }
 
   .modal {
@@ -106,9 +144,9 @@
   }
 
   input:checked ~ label .modal {
-    width: 100vw;
-    height: 100vh;
-    background: #333;
+    width: 90vw;
+    height: 90vh;
+    background: #404d67;
     pointer-events: none;
     border-radius: 20px;
     opacity: 1;
