@@ -27,30 +27,41 @@
       <p class="lg:text-lg mb-6 text-center text-gray-300">
         Receba uma proposta <br /> personalizada para sua empresa
       </p>
+
       <form action="https://formsubmit.co/vsiago23@gmail.com" method="POST">
         <input
-          class="w-full rounded-lg p-4 text-gray-700 text-xl"
+          class="pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl"
           type="text"
+          name="nome"
           placeholder="Seu nome"
           required
         />
         <br />
         <input
-          class="w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
+          class="pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
           type="text"
+          name="tel/whatsapp"
           placeholder="Telefone ou WhatsApp"
           required
         />
         <br />
         <div class="mt-4 flex items-center">
-          <input id="check" class="w-5 h-5" type="checkbox" required />
-          <label for="check" class="ml-2 font-medium"
+          <input
+            id="check"
+            class="pointer-events-auto w-5 h-5"
+            type="checkbox"
+            required
+          />
+          <label for="check" class="ml-2 text-left"
             >Aceito que alguém entre em contato</label
           >
         </div>
-        <input type="hidden" name="_next" value="./">
+        <input type="hidden" name="_next" value="https://oplan.vercel.app" />
+        <input type="hidden" name="_subject" value="Novo envio!" />
+        <input type="hidden" name="_captcha" value="false" />
         <br />
-        <button type="button" class="w-full rounded-lg p-4 bg-cyan-500 text-xl"
+        <button
+          class="pointer-events-auto w-full rounded-lg p-4 bg-cyan-500 text-xl"
           >Receber Proposta</button
         >
       </form>
@@ -60,12 +71,24 @@
     <label for="open-modal">
       <div class="btn">Receber Proposta</div>
       <div class="modal z-[2000] flex">
-        <svg class="fechar opacity-0 w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        <svg
+          class="fechar opacity-0 w-10 h-10"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"></path>
         </svg>
-        
 
-        <div class="abrir-formulario hidden w-full p-6 text-white rounded-[22px] m-auto relative">
+        <div
+          class="abrir-formulario hidden w-full p-6 text-white rounded-[22px] m-auto relative"
+        >
           <p class="text-2xl mb-6 text-center text-gray-300">
             Receba uma proposta <br /> personalizada para sua empresa
           </p>
@@ -87,7 +110,8 @@
             />
             <br />
             <div class="mt-4 flex items-center">
-              <input id="check"
+              <input
+                id="check"
                 class="pointer-events-auto w-5 h-5"
                 type="checkbox"
                 required
@@ -96,9 +120,13 @@
                 >Aceito que alguém entre em contato</label
               >
             </div>
-            <input type="hidden" name="_next" value="https://oplan.vercel.app">
-            <input type="hidden" name="_subject" value="Novo envio!">
-            <input type="hidden" name="_captcha" value="false">
+            <input
+              type="hidden"
+              name="_next"
+              value="https://oplan.vercel.app"
+            />
+            <input type="hidden" name="_subject" value="Novo envio!" />
+            <input type="hidden" name="_captcha" value="false" />
             <br />
             <button
               class="pointer-events-auto w-full rounded-lg p-4 bg-cyan-500 text-xl"
