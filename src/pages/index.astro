@@ -30,27 +30,27 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
     </div>
   </section> -->
   <!-- <SectionAbout /> -->
-  <section class=" hidden min-h-[700px] bg-white  flex-col justify-center items-center w-screen sm:flex">
+  <section class="min-h-[800px] bg-white flex flex-col justify-center items-center w-screen">
     <div>
-      <img class="w-[90px] m-auto" src="./images/icon-atendimento.png" alt="icone atendimento">
-      <h3 class="text-center text-4xl text-[#5B5B5B]">Nossos canais de atendimento</h3>
+      <img class="w-[60px] m-auto" src="./images/icon-atendimento.png" alt="icone atendimento">
+      <h3 class="text-center text-2xl text-[#5B5B5B]">Nossos canais de atendimento</h3>
     </div>
 
-    <main class="mt-6 flex flex-col container w-full">
-      <div class="flex gap-3  ">
-        <div class="border-2 border-sky-500 p-10 rounded-2xl w-full flex">
+    <main class="mt-6 flex flex-col container w-full p-5">
+      <div class="flex gap-2 flex-col lg:flex-row">
+        <div class="border-2 border-sky-500 p-3 rounded-2xl w-full flex">
           <img class="h-[60px] mr-3" src="./images/icon-cadastro.png" alt="">
           <div>
-            <h4 class="text-[#308AB2] text-2xl font-medium">Gostaria de falar com o Cadastro?</h4>
+            <h4 class="text-[#308AB2] text-lg font-medium">Gostaria de falar com o Cadastro?</h4>
             <p>Movimentação Cadastral, exclusão, inclusão</p>
             <p class="font-2xl">(21) 2391-9645  (Opção 5)</p>
             <p>cadastro@oplan.com.br</p>
           </div>
         </div>
-        <div class="border-2 border-sky-500 p-10 rounded-2xl w-full flex">
+        <div class="border-2 border-sky-500 p-3 rounded-2xl w-full flex">
           <img class="h-[60px] mr-3" src="./images/icon-comercial.png" alt="">
           <div>
-            <h4 class="text-[#308AB2] text-2xl font-medium">Assunto Comercial?</h4>
+            <h4 class="text-[#308AB2] text-lg font-medium">Assunto Comercial?</h4>
             <p>Relatórios, reajustes, coberturas, boletos</p>
             <p class="font-2xl">(21) 2391-9645 (Opção 1) </p>
             <p>comercial@oplan.com.br</p>
@@ -58,19 +58,21 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
         </div>
       </div>
       <div>
-        <div class="mt-3 border-2 bg-[#363E52] p-10 py-14 rounded-2xl w-full flex justify-around text-white">
-          <div>
-            <p class="text-3xl">Reclamações e Elogios!</p>
-            <p class="text-lg">Relatórios, reajustes, coberturas, boletos</p>
+        <div class="mt-3 border-2 bg-[#363E52] p-10 py-8 rounded-2xl w-full flex flex-col justify-around text-white lg:flex-row lg:justify-start lg:items-center lg:gap-20">
+          <div class="w-[500px]">
+            <p class="text-xl">Reclamações e Elogios!</p>
+            <p class="text-sm">Relatórios, reajustes, coberturas, boletos</p>
           </div>
-          <div>
-            <p class="text-2xl font-medium">SAC</p>
-            <p>(21) 2391-9645</p>
-            <p>sac@oplan.com.br</p>
-          </div>
-          <div>
-            <p class="text-2xl font-medium">Ouvidoria</p>
-            <p>comercial@oplan.com.br</p>
+          <div class="flex justify-between mt-5">
+            <div>
+              <p class="text-2xl font-medium">SAC</p>
+              <p>(21) 2391-9645</p>
+              <p>sac@oplan.com.br</p>
+            </div>
+            <div>
+              <p class="text-2xl font-medium">Ouvidoria</p>
+              <p>comercial@oplan.com.br</p>
+            </div>
           </div>
         </div>
       </div>
@@ -86,6 +88,6 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
         height={36}
       />
     </a>
-    <p class="mt-4 text-lg text-slate-600">Copyright © 2023 Oplan - Todos os direitos reservados.</p>
+    <p class="mt-4 text-md text-slate-600">Copyright © 2023 Oplan - Todos os direitos reservados.</p>
   </footer>
 </Layout>
