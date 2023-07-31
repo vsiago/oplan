@@ -23,7 +23,29 @@ import ListaMenuDocs from "./ListaMenuDocs.astro";
   </svg>
   <ListaMenuDocs />
 </button>
+<button
+  id="btnDocsMobile"
+  class="w-[300px] justify-between items-center gap-1 border-2 border-blue-400 px-8 py-2 rounded-lg font-medium lg:ml-8 relative"
+>
+  Documentos
+</button>
 
 <script>
+  window.onload = function () {
+    var menuDesktop = document.getElementById("btnDocs");
+    var menuMobile = document.getElementById("btnDocsMobile");
+
+    const viewportWidth = window.innerWidth;
+    console.log(viewportWidth);
+
+    if (viewportWidth < 640) {
+      menuDesktop.style.display = "none"; // Esconde o menu para desktop
+      menuMobile.style.display = "block"; // Mostra o menu para dispositivos móveis
+    } else {
+      menuDesktop.style.display = "flex"; // Mostra o menu para desktop
+      menuMobile.style.display = "none"; // Esconde o menu para dispositivos móveis
+    }
+  };
+
   import "../ButtonDocs/ButtonDocs";
 </script>
