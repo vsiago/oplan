@@ -28,9 +28,10 @@
         Receba uma proposta <br /> personalizada para sua empresa
       </p>
 
-      <form action="https://formsubmit.co/leads@oplan.com.br" method="POST">
+      <!-- FORMULARIO PC -->
+      <form class="formPc" method="POST">
         <input
-          class="pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl"
+          class="inputNamePc pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl"
           type="text"
           name="nome"
           placeholder="Seu nome"
@@ -38,8 +39,8 @@
         />
         <br />
         <input
-          class="pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
-          type="text"
+          class="inputTelPc pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
+          type="number"
           name="tel/whatsapp"
           placeholder="Telefone ou WhatsApp"
           required
@@ -61,7 +62,7 @@
         <input type="hidden" name="_captcha" value="false" />
         <br />
         <button
-          class="pointer-events-auto w-full rounded-lg p-4 bg-cyan-500 text-xl"
+          class="btnReceberPropostaPc pointer-events-auto w-full rounded-lg p-4 bg-cyan-500 text-xl"
           >Receber Proposta</button
         >
       </form>
@@ -92,9 +93,11 @@
           <p class="text-2xl mb-6 text-center text-gray-300">
             Receba uma proposta <br /> personalizada para sua empresa
           </p>
-          <form action="https://formsubmit.co/leads@oplan.com.br" method="POST">
+
+          <!-- FORMULARIO MOBILE -->
+          <form method="POST">
             <input
-              class="pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl"
+              class="inputNameMob pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl"
               type="text"
               name="nome"
               placeholder="Seu nome"
@@ -102,8 +105,8 @@
             />
             <br />
             <input
-              class="pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
-              type="text"
+              class="inputTelMob pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
+              type="number"
               name="tel/whatsapp"
               placeholder="Telefone ou WhatsApp"
               required
@@ -120,16 +123,8 @@
                 >Aceito que alguém entre em contato</label
               >
             </div>
-            <input
-              type="hidden"
-              name="_next"
-              value="https://oplan.vercel.app"
-            />
-            <input type="hidden" name="_subject" value="Novo envio!" />
-            <input type="hidden" name="_captcha" value="false" />
-            <br />
             <button
-              class="pointer-events-auto w-full rounded-lg p-4 bg-cyan-500 text-xl"
+              class="btnReceberPropostaMob pointer-events-auto w-full rounded-lg p-4 bg-cyan-500 text-xl"
               >Receber Proposta</button
             >
           </form>
@@ -138,6 +133,8 @@
     </label>
   </div>
 </section>
+
+<script src="./SalveLeads.js" />
 
 <style>
   body {
