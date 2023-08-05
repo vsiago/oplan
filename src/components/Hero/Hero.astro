@@ -28,7 +28,7 @@
         Receba uma proposta <br /> personalizada para sua empresa
       </p>
 
-      <!-- FORMULARIO PC -->
+      <!-- FORMULARIO DESKTOP -->
       <form class="formPc" method="POST">
         <input
           class="inputNamePc pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl"
@@ -54,7 +54,7 @@
             required
           />
           <label for="check" class="ml-2 text-left"
-            >Aceito que alguém entre em contato</label
+            >Aceito receber informações via WhatsApp.</label
           >
         </div>
         <input type="hidden" name="_next" value="https://oplan.vercel.app" />
@@ -95,7 +95,7 @@
           </p>
 
           <!-- FORMULARIO MOBILE -->
-          <form method="POST">
+          <form class="formMobile" method="POST">
             <input
               class="inputNameMob pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl"
               type="text"
@@ -120,7 +120,7 @@
                 required
               />
               <label for="check" class="ml-2 text-left"
-                >Aceito que alguém entre em contato</label
+                >Aceito receber informações via WhatsApp.</label
               >
             </div>
             <button
@@ -134,7 +134,17 @@
   </div>
 </section>
 
-<script src="./SalveLeads.js" />
+<!-- <script>
+  // Funções Reutilizar , encapsula linhas de códigos especificas
+  function enviarFormularioPc(event) {
+    event.preventDefault();
+    console.log("Foi!");
+  }
+
+  const form = document.querySelector(".formPc");
+  form?.addEventListener("submit", enviarFormularioPc);
+</script> -->
+<script src="./SalveLeads.js"></script>
 
 <style>
   body {
