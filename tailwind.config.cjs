@@ -9,7 +9,12 @@ module.exports = {
 		'body': ["Ubuntu"],
 	  },
 	theme: {
-		extend: {},
+		extend: {
+			backgroundImage: {
+        'about-background': "url('/images/SVG/retangle-about.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
+		},
 		
 	},
 	plugins: [],
