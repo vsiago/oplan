@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header/Header.astro";
 import Hero from "../components/Hero/Hero.astro";
+import Footer from "../components/Footer/Footer.astro";
 import ServicesNav from "../components/ServicesNav/ServicesNav.astro";
 import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
 ---
@@ -36,7 +37,7 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
   >
     <img class="w-[80px]" src="./images/SVG/logo-favicon-oplan.svg" alt="" />
     <h1 class="text-center text-2xl text-[#5B5B5B] lg:text-4xl">Quem Somos</h1>
-    <p class="text-lg w-[80%] md:w-[40%] pt-6">
+    <p class="text-[#51596b] text-xl w-[80%] md:w-[40%] pt-6">
       Somos uma empresa de planos de saúde comprometida em oferecer aos nossos
       clientes saúde de qualidade, de forma acessível e humanizada. Temos uma
       ampla rede própria e credenciada de profissionais, hospitais e clínicas,
@@ -120,87 +121,5 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
       </div>
     </main>
   </section>
-  <footer class="m-auto py-10 px-6 bg-[#363E52] text-center">
-    <div class="md:flex md:container md:m-auto justify-between items-center">
-      <div>
-        <a class="container m-auto flex justify-center" href="./">
-          <img
-            src="./images/logo-oplan-light.png"
-            alt="Logo Oplan"
-            width={205}
-            height={36}
-          />
-        </a>
-        <div class="flex justify-center gap-3 m-3">
-          <img src="./images/ans-oplan.png" width="100" />
-          <img src="./images/logo-ans.png" width="100" />
-        </div>
-      </div>
-      <div class="py-6 md:hidden lg:block">
-        <h3
-          class="text-left w-full h-full block font-medium text-white uppercase mb-2"
-        >
-          Quem Somos
-        </h3>
-        <p
-          class="text-left text-sm text-slate-400 sm:max-w-lg md:max-w-[250px] lg:max-w-[20rem] xl:max-w-[28rem]"
-        >
-          Somos uma empresa de planos de saúde comprometida em oferecer aos
-          nossos clientes saúde de qualidade, de forma acessível e humanizada.
-          Temos uma ampla rede própria e credenciada de profissionais, hospitais
-          e clínicas, garantindo uma cobertura abrangente.
-        </p>
-      </div>
-      <div class="flex mb-6">
-        <img
-          class="mr-2 w-[32px] h-[44px] md:h-[38px] xl:h-[40px]"
-          src="./images/icon-location.png"
-          alt=""
-        />
-        <div class="text-left">
-          <span class="text-left font-medium text-white">ONDE ESTAMOS?</span>
-          <p class="text-left text-sm text-slate-400 max-w-md md:max-w-[150px]">
-            Estrada Ari Parreiras nº 201, Centro de Itaguaí, CEP 23815-541
-          </p>
-        </div>
-      </div>
-      <div class="border-y border-[#283344] md:border-none py-6">
-        <ul
-          class="flex justify-center md:flex-col lg:flex-row text-left lg:gap-2"
-        >
-          <li class="p-2 md:p-1">
-            <a class="w-full h-full block font-medium text-slate-300" href="./"
-              >Inicio</a
-            >
-          </li>
-          <li class="p-2 md:p-1">
-            <a class="w-full h-full block font-medium text-slate-300" href="./"
-              >Sobre</a
-            >
-          </li>
-          <li class="p-2 md:p-1">
-            <a class="w-full h-full block font-medium text-slate-300" href="./"
-              >Atendimentos</a
-            >
-          </li>
-          <li class="p-2 md:p-1">
-            <a class="w-full h-full block font-medium text-slate-300" href="./"
-              >Contato</a
-            >
-          </li>
-        </ul>
-        <button
-          id="btnDocsMobile"
-          class="w-[313px] h-[45px] justify-between items-center gap-1 border-2 border-blue-400 px-8 py-2 rounded-lg font-medium relative text-slate-300"
-        >
-          Documentos
-        </button>
-      </div>
-    </div>
-    <p
-      class="mt-4 text-md font-medium text-slate-300 pt-4 container m-auto md:text-lg md:text-slate-400 md:border-t border-[#283344]"
-    >
-      Copyright © 2023 Oplan - Todos os direitos reservados.
-    </p>
-  </footer>
+  <Footer />
 </Layout>

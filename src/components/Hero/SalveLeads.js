@@ -48,8 +48,6 @@ function enviarFormularioMobile(event) {
   const name = inputNameMob.value;
   const whatsApp = inputTelMob.value;
 
-
-
   create(name, whatsApp);
 }
 
@@ -66,11 +64,28 @@ function create(name, whatsApp) {
 
   set(newLeadRef, data)
     .then(() => {
-      console.log("Dados salvos com sucesso!");
       inputNamePc.value = "";
       inputTelPc.value = "";
+      HandlerAbrirModalObrigado(name);
     })
     .catch((error) => {
       console.error("Erro ao salvar os dados:", error);
     });
 }
+
+const HandlerAbrirModalObrigado = (nome) => {
+  // Abrir modal
+  const modalObrigado = document.querySelector("#modalObrigado");
+  modalObrigado.classList.remove("hidden");
+  modalObrigado.classList.add("flex");
+
+  const displayNomePessoa = document.querySelector("#displayNomePessoa");
+  displayNomePessoa.innerHTML = nome;
+
+  // Fechar modal
+  const btnOk = document.querySelector("#btnOk");
+  btnOk.addEventListener("click", () => {
+    modalObrigado.classList.add("hidden");
+    modalObrigado.classList.remove("flex");
+  });
+};
