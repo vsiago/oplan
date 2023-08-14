@@ -26,11 +26,26 @@ const inputNamePc = document.querySelector(".inputNamePc");
 const inputTelPc = document.querySelector(".inputTelPc");
 const formPc = document.querySelector(".formPc");
 
+inputTelPc.addEventListener("keypress", () => {
+  const inputTelLength = inputTelPc.value.length;
+
+  if (inputTelLength === 0) {
+    inputTelPc.value += "(";
+  } else if (inputTelLength === 3) {
+    inputTelPc.value += ") ";
+  } else if (inputTelLength === 9) {
+    inputTelPc.value += "-";
+  }
+});
+
 function enviarFormularioPc(event) {
   event.preventDefault();
 
   const name = inputNamePc.value;
   const whatsApp = inputTelPc.value;
+
+  const btnEnviar = formPc.querySelector("button");
+  btnEnviar.innerHTML = "Enviando...";
 
   create(name, whatsApp);
 }
@@ -41,6 +56,18 @@ formPc.addEventListener("submit", enviarFormularioPc);
 const inputNameMob = document.querySelector(".inputNameMob");
 const inputTelMob = document.querySelector(".inputTelMob");
 const formMobile = document.querySelector(".formMobile");
+
+inputTelMob.addEventListener("keypress", () => {
+  const inputTelMobLength = inputTelMob.value.length;
+
+  if (inputTelMobLength === 0) {
+    inputTelMob.value += "(";
+  } else if (inputTelMobLength === 3) {
+    inputTelMob.value += ") ";
+  } else if (inputTelMobLength === 9) {
+    inputTelMob.value += "-";
+  }
+});
 
 function enviarFormularioMobile(event) {
   event.preventDefault();
@@ -79,8 +106,10 @@ const HandlerAbrirModalObrigado = (nome) => {
   modalObrigado.classList.remove("hidden");
   modalObrigado.classList.add("flex");
 
+  const primeiroNome = nome.split(" ");
+
   const displayNomePessoa = document.querySelector("#displayNomePessoa");
-  displayNomePessoa.innerHTML = nome;
+  displayNomePessoa.innerHTML = primeiroNome[0];
 
   // Fechar modal
   const btnOk = document.querySelector("#btnOk");
@@ -89,3 +118,5 @@ const HandlerAbrirModalObrigado = (nome) => {
     modalObrigado.classList.remove("flex");
   });
 };
+
+const formatarNumeroCelular = (numero) => {};

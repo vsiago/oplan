@@ -40,8 +40,10 @@
         <br />
         <input
           class="inputTelPc pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
-          type="number"
+          type="text"
           name="tel/whatsapp"
+          autocomplete="off"
+          maxlength="15"
           placeholder="Telefone ou WhatsApp"
           required
         />
@@ -106,8 +108,10 @@
             <br />
             <input
               class="inputTelMob pointer-events-auto w-full rounded-lg p-4 text-gray-700 text-xl mt-3"
-              type="number"
+              type="text"
               name="tel/whatsapp"
+              autocomplete="off"
+              maxlength="15"
               placeholder="Telefone ou WhatsApp"
               required
             />
@@ -134,9 +138,9 @@
   </div>
   <div
     id="modalObrigado"
-    class="hidden w-screen mx-3 h-screen absolute z-[5000] top-0 items-center justify-center text-gray-700 text-center"
+    class="hidden md:w-full mx-4 h-screen absolute z-[5000] top-0 items-center justify-center text-gray-700 text-center"
   >
-    <div class="p-10 px-20 bg-white rounded-3xl">
+    <div class="py-10 md:p-10 px-10 bg-white rounded-3xl">
       <img
         width="100px"
         class="m-auto"
@@ -147,9 +151,10 @@
       <h3 class="text-center text-2xl text-[#5B5B5B] lg:text-4xl">
         Obrigado, <span id="displayNomePessoa" class="text-cyan-500">Nome</span>
       </h3>
-      <p class="text-xl pt-2 text-[#717B92] text-center font-regular">
-        Em breve um dos nossos colaboradores <br /> fará uma proposta para você.
-        :)
+      <p
+        class="text-xl w-[100%] mx-auto md:pt-2 text-[#717B92] text-center md:w-[60%] font-regular"
+      >
+        Em breve um dos nossos colaboradores fará uma proposta para você.
       </p>
       <button
         id="btnOk"
