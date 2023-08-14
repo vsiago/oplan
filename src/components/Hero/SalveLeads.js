@@ -22,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
 // PC /////////////////////////////////////////////
-const inputNamePc = document.querySelector(".inputNamePc");
+let inputNamePc = document.querySelector(".inputNamePc");
 const inputTelPc = document.querySelector(".inputTelPc");
 const formPc = document.querySelector(".formPc");
 
@@ -37,6 +37,14 @@ inputTelPc.addEventListener("keypress", () => {
     inputTelPc.value += "-";
   }
 });
+
+//**** CONTINUAR ******/
+// inputNamePc.addEventListener("keypress", () => {
+//   const palavras = inputNamePc.value.split(" ")[0][0].toUpperCase()
+
+//   inputNamePc.value = palavras
+
+// })
 
 function enviarFormularioPc(event) {
   event.preventDefault();
