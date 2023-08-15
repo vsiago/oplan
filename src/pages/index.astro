@@ -33,10 +33,10 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
   <!-- <SectionAbout /> -->
 
   <section
-    class="bg-about-background w-screen sm-h-[300px] h-[500px]  bg-no-repeat bg-bottom bg-[length:auto_100%] xl:bg-[length:100vw_600px] text-center flex flex-col justify-center items-center"
+    class="bg-about-background w-screen sm-h-[300px] h-[500px] bg-no-repeat bg-bottom bg-[length:auto_100%] xl:bg-[length:100vw_600px] text-center flex flex-col justify-center items-center"
   >
     <img class="w-[80px]" src="./images/SVG/logo-favicon-oplan.svg" alt="" />
-    <h1 class="text-center  text-4xl text-[#5B5B5B] lg:text-5xl">Quem Somos</h1>
+    <h1 class="text-center text-4xl text-[#5B5B5B] lg:text-5xl">Quem Somos</h1>
     <p class="text-[#51596b] text-xl w-[80%] md:w-[40%] pt-6">
       Somos uma empresa de planos de saúde comprometida em oferecer aos nossos
       clientes saúde de qualidade, de forma acessível e humanizada. Temos uma
@@ -44,19 +44,48 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
       garantindo uma cobertura abrangente.
     </p>
   </section>
-  <section class="rede-propria text-[#51596b] text-center container m-auto relative">
-    <img class="sm:w-[70px] md:w-[100px] absolute top-[-50px] left-10 sm:left-3" src="./images/selo-ona.png" alt="">
-    <h1 class="text-center text-3xl text-[#5B5B5B] lg:text-4xl mt-10 md:mb-5 lg:mb-0">Rede Própria</h1>
+  <section
+    class="rede-propria text-[#51596b] text-center container m-auto relative"
+  >
+    <img
+      class="w-[80px] md:w-[100px] absolute top-[-50px] md:left-10 left-4"
+      src="./images/selo-ona.png"
+      alt=""
+    />
+    <h1
+      class="text-center text-3xl text-[#5B5B5B] lg:text-4xl mt-10 md:mb-5 lg:mb-0"
+    >
+      Rede Própria
+    </h1>
     <main class="flex flex-col md:flex-row">
       <div class="w-full">
-        <img src="./images/predio-hospital-hgi.png" alt="Foto Hospital Geral Itaguaí">
+        <img
+          src="./images/predio-hospital-hgi.png"
+          alt="Foto Hospital Geral Itaguaí"
+        />
       </div>
-      <div class="w-full text-center md:text-start flex flex-col justify-center">
-        <img class="w-14 mx-auto md:ml-0" src="./images/SVG/icon-hospital.svg" alt="Ícone Hospital">
-        <h2 class="text-3xl text-[#1D8DE3] font-medium">Hospital Geral<br> Itaguaí</h2>
-        <p class="pt-3 w-[80%] md:w-full mx-auto">Bem-vindo ao nosso hospital geral, onde o cuidado com a sua saúde é nossa prioridade máxima. Nosso objetivo é oferecer um atendimento médico de qualidade, com uma equipe altamente capacitada e uma infraestrutura moderna e completa, garantindo o melhor tratamento para nossos pacientes.</p>
+      <div
+        class="w-full text-center md:text-start flex flex-col justify-center"
+      >
+        <img
+          class="w-14 mx-auto md:ml-0"
+          src="./images/SVG/icon-hospital.svg"
+          alt="Ícone Hospital"
+        />
+        <h2 class="text-3xl text-[#1D8DE3] font-medium">
+          Hospital Geral<br /> Itaguaí
+        </h2>
+        <p class="pt-3 w-[80%] md:w-full mx-auto">
+          Bem-vindo ao nosso hospital geral, onde o cuidado com a sua saúde é
+          nossa prioridade máxima. Nosso objetivo é oferecer um atendimento
+          médico de qualidade, com uma equipe altamente capacitada e uma
+          infraestrutura moderna e completa, garantindo o melhor tratamento para
+          nossos pacientes.
+        </p>
         <div class="mt-4">
-          <ul class="flex gap-3 sm:w-[80%] flex-wrap text-sm justify-center md:justify-start">
+          <ul
+            class="flex gap-3 sm:w-[80%] flex-wrap text-sm justify-center md:justify-start"
+          >
             <li>
               <p class="px-4 py-2 bg-slate-200 rounded-lg">Segurança</p>
             </li>
@@ -79,23 +108,23 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
     <div class="w-full">
       <ul class="flex justify-between gap-3 mt-4">
         <li>
-          <img src="./images/ft-hospital1.png" alt="Foto 1">
+          <img src="./images/ft-hospital1.png" alt="Foto 1" />
         </li>
         <li>
-          <img src="./images/ft-hospital2.png" alt="Foto 2">
+          <img src="./images/ft-hospital2.png" alt="Foto 2" />
         </li>
         <li>
-          <img src="./images/ft-hospital3.png" alt="Foto 3">
+          <img src="./images/ft-hospital3.png" alt="Foto 3" />
         </li>
         <li>
-          <img src="./images/ft-hospital4.png" alt="Foto 4">
+          <img src="./images/ft-hospital4.png" alt="Foto 4" />
         </li>
       </ul>
     </div>
   </section>
 
   <section
-    class="min-h-[800px]  flex flex-col justify-center items-center w-screen"
+    class="min-h-[800px] flex flex-col justify-center items-center w-screen"
   >
     <div>
       <img
