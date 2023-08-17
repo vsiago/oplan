@@ -32,11 +32,14 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
   </section> -->
   <!-- <SectionAbout /> -->
 
+  <!-- QUEM SOMOS -->
   <section
     class="bg-about-background w-screen sm-h-[300px] h-[500px] bg-no-repeat bg-bottom bg-[length:auto_100%] xl:bg-[length:100vw_600px] text-center flex flex-col justify-center items-center"
   >
     <img class="w-[80px]" src="./images/SVG/logo-favicon-oplan.svg" alt="" />
-    <h1 class="text-center text-4xl text-[#5B5B5B] lg:text-5xl">Quem Somos</h1>
+    <h1 class="text-center text-6xl text-[#363E52] font-medium lg:text-5xl">
+      Quem Somos
+    </h1>
     <p class="text-[#51596b] text-xl w-[80%] md:w-[40%] pt-6">
       Somos uma empresa de planos de saúde comprometida em oferecer aos nossos
       clientes saúde de qualidade, de forma acessível e humanizada. Temos uma
@@ -44,8 +47,9 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
       garantindo uma cobertura abrangente.
     </p>
   </section>
+  <!-- REDE PRÓPRIA -->
   <section
-    class="rede-propria text-[#51596b] text-center container m-auto relative"
+    class="rede-propria text-[#363E52] text-center container m-auto relative"
   >
     <img
       class="w-[80px] md:w-[100px] absolute top-[-50px] md:left-10 left-4"
@@ -53,7 +57,7 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
       alt=""
     />
     <h1
-      class="text-center text-3xl text-[#5B5B5B] lg:text-4xl mt-10 md:mb-5 lg:mb-0"
+      class="text-center text-4xl font-medium text-[#363E52] lg:text-4xl mt-[100px] md:mb-5 lg:mb-0"
     >
       Rede Própria
     </h1>
@@ -72,19 +76,19 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
           src="./images/SVG/icon-hospital.svg"
           alt="Ícone Hospital"
         />
-        <h2 class="text-3xl text-[#1D8DE3] font-medium">
+        <h2 class="text-4xl mt-3 text-[#1D8DE3] font-medium">
           Hospital Geral<br /> Itaguaí
         </h2>
-        <p class="pt-3 w-[80%] md:w-full mx-auto">
+        <p class="text-[#51596b] md:ml-0 text-xl w-[100%] md:w-[80%] pt-6">
           Bem-vindo ao nosso hospital geral, onde o cuidado com a sua saúde é
           nossa prioridade máxima. Nosso objetivo é oferecer um atendimento
           médico de qualidade, com uma equipe altamente capacitada e uma
           infraestrutura moderna e completa, garantindo o melhor tratamento para
           nossos pacientes.
         </p>
-        <div class="mt-4">
+        <div class="mt-4 mx-auto w-full">
           <ul
-            class="flex gap-3 sm:w-[80%] flex-wrap text-sm justify-center md:justify-start"
+            class="flex gap-3 sm:w-[80%] flex-wrap text-sm justify-center lg:justify-start"
           >
             <li>
               <p class="px-4 py-2 bg-slate-200 rounded-lg">Segurança</p>
@@ -122,9 +126,69 @@ import SectionAbout from "../components/SectionAbout/SectionAbout.astro";
       </ul>
     </div>
   </section>
+  <!-- UNIDADES -->
+  <section class="h-[700px] mt-12 relative">
+    <div class="h-full mx-auto lg:flex">
+      <div class="h-full w-full bg-[#DDFFDC]"></div>
+      <div class="h-full w-full bg-[#FFEBCD]"></div>
+    </div>
+    <main class="absolute h-full flex container mx-auto top-0 right-0 left-0">
+      <div class="lg:flex">
+        <div class="w-full h-full p-8 md:p-16">
+          <img
+            class="w-[100px]"
+            src="./images/SVG/icon-centro-medico.svg"
+            alt="Ícone Centro Médico"
+          />
+          <h3 class="text-4xl font-medium text-[#374037] mt-5">
+            Centro Médico <br /> da Família
+          </h3>
+          <p class="text-[#2F3F2F] text-xl w-[90%] md:w-[80%] pt-6">
+            Aqui, oferecemos um atendimento completo e personalizado para todas
+            as idades, desde recém-nascidos até idosos. Com uma equipe de
+            profissionais altamente capacitados e uma infraestrutura moderna,
+            garantimos um cuidado de qualidade para toda a sua família.
+          </p>
+          <div class="flex gap-3 w-full">
+            <img
+              class="w-[35%] mt-10"
+              src="./images/foto-centro-medico1.png"
+              alt=""
+            />
+            <img
+              class="w-[35%] mt-10"
+              src="./images/foto-centro-medico2.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-full h-full p-8 md:p-16">
+          <img
+            class="w-[100px]"
+            src="./images/SVG/icon-social.svg"
+            alt="Ícone Centro Social"
+          />
+          <h3 class="text-4xl font-medium text-[#403737] mt-5">
+            Centro Social <br /> Bezerra de Menezes
+          </h3>
+          <p class="text-[#382D2D] text-xl w-[90%] md:w-[80%] pt-6">
+            Um lugar dedicado a promover o desenvolvimento pessoal e
+            comunitário. Oferecemos uma ampla variedade de atividades e
+            serviços, buscando sempre atender às necessidades de cada indivíduo
+            e da comunidade em geral.
+          </p>
+          <div class="flex gap-3 w-full">
+            <img class="w-[35%] mt-10" src="./images/foto-isbm-1.png" alt="" />
+            <img class="w-[35%] mt-10" src="./images/foto-isbm-2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <!-- NOSSOS CANAIS DE ATENDIMENTO -->
 
   <section
-    class="min-h-[800px] flex flex-col justify-center items-center w-screen"
+    class="min-h-[800px] mt-[700px] md:mt-0 flex flex-col justify-center items-center w-screen"
   >
     <div>
       <img
