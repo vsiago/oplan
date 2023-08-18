@@ -4,9 +4,9 @@ import ListaMenuDocs from "./ListaMenuDocs.astro";
 
 <button
   id="btnDocs"
-  class="w-full justify-between lg:flex items-center gap-1 border-2 border-blue-400 px-8 py-2 rounded-lg font-medium lg:ml-8 relative"
+  class="w-full justify-between lg:flex items-center gap-1 border-2 border-blue-400 px-8 py-2 rounded-lg font-medium relative"
 >
-  <p class="text-xl inline-block">Docs</p>
+  <p class="text-xl inline-block pr-5 pb-1">Docs</p>
   <svg
     id="arrowBtn"
     xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ import ListaMenuDocs from "./ListaMenuDocs.astro";
     viewBox="0 0 24 24"
     stroke-width="1.5"
     stroke="currentColor"
-    class="w-4 h-4 stroke-2 hidden lg:block"
+    class="w-4 h-4 stroke-2 absolute right-3 top-[40%] lg:static lg:block"
   >
     <path
       stroke-linecap="round"
@@ -25,12 +25,12 @@ import ListaMenuDocs from "./ListaMenuDocs.astro";
 </button>
 <button
   id="btnDocsMobile"
-  class="w-[300px] justify-between items-center gap-1 border-2 border-blue-400 px-8 py-2 rounded-lg font-medium lg:ml-8 relative"
+  class="w-[300px] hidden justify-between items-center gap-1 border-2 border-blue-400 px-8 py-2 rounded-lg font-medium lg:ml-8 relative"
 >
   Documentos
 </button>
 
-<script>
+<!-- <script>
   window.onload = function () {
     var menuDesktop = document.getElementById("btnDocs");
     var menuMobile = document.getElementById("btnDocsMobile");
@@ -47,4 +47,4 @@ import ListaMenuDocs from "./ListaMenuDocs.astro";
   };
 
   import "../ButtonDocs/ButtonDocs";
-</script>
+</script> -->
